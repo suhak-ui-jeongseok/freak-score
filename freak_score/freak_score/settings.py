@@ -35,7 +35,6 @@ if not os.path.exists(SECRET_KEY_PATH):
 if os.path.isfile(SECRET_KEY_PATH):
     with open(SECRET_KEY_PATH, 'r') as f:
         SECRET_KEY = f.read().strip()
-print(SECRET_KEY)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
